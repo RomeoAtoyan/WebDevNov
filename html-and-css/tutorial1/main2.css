@@ -25,3 +25,15 @@ ul.contact_info{
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+a.about{
+
+    text-align: right;
+    text-decoration: none;
+    border-radius: 25px;
+}
+p.brussel_about{
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align-last: center;
+    
+}
