@@ -1,5 +1,4 @@
 a {
-    background-color: burlywood;
     color: white;
     display: inline-block;
     width: 100%¨;
@@ -20,20 +19,19 @@ h1.service {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     border-radius: 25px;
 }
-ul.contact_info{
 
+ul.contact_info {
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-a.about{
 
+a.about {
     text-align: right;
     text-decoration: none;
     border-radius: 25px;
 }
-p.brussel_about{
 
+p.brussel_about {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align-last: center;
-    
 }
