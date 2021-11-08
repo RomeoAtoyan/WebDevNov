@@ -1,0 +1,20 @@
+span {
+    /* convert inline to block level element */
+    display: block;
+}
+
+div{
+    background-color: red;
+    color:rgb(251, 255, 0)
+}
+
+div.custom{
+    background-color: green;
+    color:white;
+}
+
+span.custom{
+    background-color: darkslateblue;
+    color:white;
+}
+
