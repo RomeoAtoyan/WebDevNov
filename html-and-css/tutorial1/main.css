@@ -14,11 +14,10 @@ p.beautiful_flowers {
 }
 
 a:hover {
-    color: darkgreen;
+    color: rgb(187, 43, 249);
 }
 
 a {
-    
     color: white;
     display: inline-block;
     width: 100%¨;
@@ -29,7 +28,6 @@ a {
 }
 
 a {
-    
     color: white;
     display: inline-block;
     width: 100%¨;
@@ -49,5 +47,12 @@ body.background_image {
     background-image: url(https://images7.alphacoders.com/115/1154544.jpg);
     background-size: cover;
     background-attachment: fixed;
-    
 }
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+a.middle {}

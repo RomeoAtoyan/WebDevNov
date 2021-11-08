@@ -1,0 +1,13 @@
+th, td {
+    border: 1px solid blue;
+}
+li{
+
+    display: inline;
+   
+}
+li:hover{
+    color: red;
+    padding: 1em;
+    background-color: slategrey;
+}

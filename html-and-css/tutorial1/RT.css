@@ -1,0 +1,12 @@
+h1.RT {
+    text-align: center;
+    font-family: fantasy;
+    color: red;
+}
+
+img.RTT {
+    text-align: center;
+    margin: auto;
+    display: block;
+    border-radius: 25px;
+}

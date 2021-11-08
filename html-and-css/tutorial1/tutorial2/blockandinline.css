@@ -1,0 +1,42 @@
+span.blockandinline {
+    display: block;
+}
+
+div.Custom {
+    background-color: red;
+    color: rgb(255, 255, 255);
+}
+
+div.Custom2 {
+    background-color:blue;
+    color: white;
+}
+span.Custom3 {
+    background-color: orange;
+    color: white;
+    display: block;
+    }
+.main{
+    display: flex;
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.child{
+    background-color: rgb(45, 46, 46);
+    padding: 4em;
+    margin: 1px;
+    
+}
+#wrapper{
+
+    background-color: black ;
+}
+.video{
+    border-radius: 20px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
