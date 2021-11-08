@@ -39,3 +39,13 @@ span.custom {
     padding: 4em;
     margin: 1px;
 }
+
+#wrapper {
+    background-color: gold;
+}
+
+video {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
