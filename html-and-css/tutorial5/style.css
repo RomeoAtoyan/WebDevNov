@@ -1,0 +1,50 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Indie+Flower */
+
+
+/* import font style */
+@font-face {
+    font-family: BlackSignature;
+    src: url(./assets/BlackSignature.otf);
+}
+
+.container {
+    padding: 1em;
+}
+
+
+/* https://fonts.google.com/ */
+
+.box {
+    /* Total element width = width + left padding + right padding + left border + right border + left margin + right margin */
+    background-color: grey;
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+    border: 10px solid red;
+    outline: 10px solid green;
+}
+
+/* https://education.github.com/pack */ 
+/*
+https://themeforest.net/category/site-templates
+*/
+
+.box>p {
+    /* text-align: right; */
+    direction: rtl;
+    /* 
+    Chinese
+    writing-mode: vertical-rl;
+    text-orientation: mixed; */
+    color: #FFFFFF;
+    /* font-family: 'BlackSignature'; */
+    font-family: 'Indie Flower';
+    background: #232323;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+}
+

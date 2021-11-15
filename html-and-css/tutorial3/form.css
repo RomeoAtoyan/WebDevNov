@@ -1,3 +1,8 @@
+html,body{
+    margin:0;
+    padding: 0;
+}
+
 form{
     max-width: 700px;
 }
@@ -6,9 +11,20 @@ form{
     display: flex;
     padding: 1em;
     width: 70%;
+    background-image: url("http://images.unsplash.com/photo-1579546929518-9e396f3cc809");
+    background-size: cover;
+    background-position: 100%;
+    background-repeat: no-repeat;
 }
 
 label{
     text-align: right;
     padding: 0.4em;
+}
+
+.bgTest{
+    background-image: url("https://img.freepik.com/free-photo/pastel-colour-feather-abstract-background_66899-1263.jpg?size=626&ext=jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }

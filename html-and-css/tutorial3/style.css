@@ -6,3 +6,15 @@ div {
 input::placeholder{
     color:green
 }
+
+.text-orange{
+    color:orange
+}
+
+.btn-outline-orange{
+    border:1px solid orange;
+}
+
+.btn-outline-orange:hover{
+    border:1px solid orange;
+}
