@@ -38,8 +38,22 @@ nav > ul > li:hover {
 main{
 
     color: white;
-    padding: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
-    
+    padding: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex
     ;
+}
+main > section{
+
+  width: 75%;
+  padding: 1em;
+}
+.sidebar{
+  width: 25%;
+  border-left-color: white;
+  border-left-width: 1px;
+  border-left-style: solid;
+  padding: 1em;
+  text-align: center;
+  font-family: sans-serif;
 }
