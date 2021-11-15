@@ -28,3 +28,72 @@ body {
     width: 32px;
     display: block;
 }
+
+ul>li {
+    list-style-image: url('https://s4.aconvert.com/convert/p3r68-cdx67/a5p20-iua6z.svg');
+}
+ul > li::marker{
+    font-size: 12pt;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.col{
+    padding: 3em;
+    background-color: indianred;
+    margin:1px
+}
+
+@media only screen and (max-width: 600px) {
+    .row {
+      background-color: lightblue;
+      flex-direction: column;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .row {
+      background-color: lightblue;
+      flex-direction: column;
+    }
+  }
+
+
+/* Extra arge devices (extra large desktops, 1201px and up) */
+@media (min-width: 1201px) {
+}
+
+/* Medium devices (tablets, 481px and up) */
+@media (min-width: 481px) {
+}
+
+/* Medium devices (small screens, laptops, 769px and up) */
+@media (min-width: 769px) {
+}
+
+/* Large devices (large desktops, 1025px and up) */
+@media (min-width: 1025px) {
+}
+
+/* Extra arge devices (extra large desktops, 1201px and up) */
+@media (min-width: 1201px) {
+}
+
+/* Small devices (landscape phones, less than 480px) */
+@media (max-width: 480px) {
+}
+
+/* Medium devices (tablets, less than 768px) */
+@media (max-width: 768px) {
+}
+
+/* Medium devices (small screens, laptops, less than 1024px) */
+@media (max-width: 1024px) {
+}
+/* Large devices (desktops, large screens, less than 1200px) */
+@media (max-width: 1200px) {
+}
