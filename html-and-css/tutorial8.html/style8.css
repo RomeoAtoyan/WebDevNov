@@ -24,12 +24,25 @@ p.second {
   background-image: url(https://wallpaperaccess.com/full/2101913.jpg);
   background-size: 600px;
   background-position: center;
-  border-radius: 60%;
+  border-radius: 0%;
   padding: 100px;
   text-align: center;
   font-family: fantasy;
   color: black;
+  transform: rotate(0deg);
 }
+p.second:hover {
+    background-image: url(https://wallpaperaccess.com/full/2101913.jpg);
+    background-size: 600px;
+    background-position: center;
+    border-radius: 60%;
+    padding: 100px;
+    text-align: center;
+    font-family: fantasy;
+    color: black;
+    
+    
+  }
 
 .box {
   max-width: 100px;
