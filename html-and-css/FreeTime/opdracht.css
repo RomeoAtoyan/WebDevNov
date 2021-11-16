@@ -88,8 +88,7 @@ ul > a:hover {
   font-size: 24pt;
   opacity: 75%;
 }
-div.container {
-}
+
 .btn-red {
   background-color: yellow;
   color: black;
@@ -101,7 +100,18 @@ div.container {
   justify-content: center;
   margin: 10px;
 }
-.btn-red {
+.btn-red:hover {
+  background-color: rgb(255, 0, 0);
+  color: black;
+  text-decoration: none;
+  border-radius: 15px;
+  padding: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+.btn-yellow {
   background-color: yellow;
   color: black;
   text-decoration: none;
@@ -112,3 +122,15 @@ div.container {
   justify-content: center;
   margin: 10px;
 }
+.btn-yellow:hover {
+  background-color: red;
+  color: black;
+  text-decoration: none;
+  border-radius: 15px;
+  padding: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
