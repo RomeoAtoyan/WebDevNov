@@ -1,0 +1,69 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-color: rgb(44, 44, 44);
+}
+*{
+  box-sizing: border-box;
+}
+header > h1 {
+  text-align: center;
+  background-image: url(https://images.unsplash.com/photo-1465101162946-4377e57745c3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3BhY2UlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80);
+  color: white;
+ 
+  border-radius: 25px;
+  padding: 10px;
+  background-size: cover;
+  background-position: center;
+}
+ul.qunir{
+  display: flex;
+  list-style-type: none;
+  text-align: center;
+  justify-content:space-evenly;
+  border-radius: 10px;
+  padding: 20px;
+  background-image: url(https://cdn.wallpapersafari.com/20/83/Tkn3tb.jpg);
+}
+
+div.row{
+  display:flex;
+}
+img.AN{
+  float:left;
+  margin-left: 25px;
+  border-radius: 10px;
+  
+
+}
+img.ATUF{
+  float: right;
+  margin-left: 15px;
+  border-radius: 10px;
+}
+p.Acer{
+  padding-left: 10px;
+  color: #5106c9;
+  text-align: center;
+  margin-right: 6px;
+}
+p.Asus{
+  color: #5106c9;
+  text-align: center;
+   
+}
+div > h3{
+  color: yellow;
+  text-align:center;
+  font-family:monospace;
+  letter-spacing: 5px;
+}
+ul > a {
+  color: white;
+  text-decoration: none;
+  font-family: monospace;
+  font-size: 16pt;
+}
