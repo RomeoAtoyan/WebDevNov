@@ -1,0 +1,67 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: rgb(39, 39, 39);
+  color: white;
+}
+.container {
+  padding: 100px;
+  max-width: 100vw;
+}
+p.first {
+  border-image: url(https://p4.wallpaperbetter.com/wallpaper/500/442/354/outrun-vaporwave-hd-wallpaper-preview.jpg)
+    30 round;
+  border-style: solid;
+  border-width: 25px;
+  padding: 25px;
+  background-color: black;
+  font-family: fantasy;
+}
+p.second {
+  background-image: url(https://wallpaperaccess.com/full/2101913.jpg);
+  background-size: 600px;
+  background-position: center;
+  border-radius: 60%;
+  padding: 100px;
+  text-align: center;
+  font-family: fantasy;
+  color: black;
+}
+
+.box {
+  max-width: 100px;
+  padding: 10em;
+  background-color: indianred;
+  position: absolute;
+}
+.box1 {
+  background-color: indianred;
+  top: 120px;
+  left: 120px;
+  z-index: -1;
+  text-transform: uppercase;
+  z-index: 1;
+  transition: all 2s;
+  transition-timing-function: ease-in-out;
+}
+.box1:hover {
+  max-width: 300px;
+  left: 500px;
+}
+.box2 {
+  background-color: indigo;
+  top: 80px;
+  left: 80px;
+}
+.box3 {
+  background-color: lime;
+  top: 40px;
+  left: 40px;
+}
+.box4 {
+  background-color: orange;
+  z-index: -1;
+}
