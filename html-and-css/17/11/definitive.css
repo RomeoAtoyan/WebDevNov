@@ -6,7 +6,7 @@
 }
 body {
   min-height: 100vw;
-  background-color: rgb(68, 68, 68);
+  background-color: rgb(42, 42, 42);
 }
 .container {
   position: relative;
@@ -120,10 +120,34 @@ i.fa-user:hover{
      font-family: fantasy;
      
 }
+i.fa-bars{
+  background-color: rgb(42, 42, 42);
+  margin-right:400px ;
+  color: white;
+
+}
+i.fa-bars:hover{
+  background-color: rgb(42, 42, 42);
+  margin-right:400px ;
+  color:yellow;
+  
+  
+}
 .end{
     margin-top: 50px;
     color: greenyellow;
     text-align: center;
 }
-
-
+.productName>h3{
+  color: rgb(255, 255, 255);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 3px;
+  
+}
+.productName>p{
+  color:grey;
+  
+}
+.price_rating > h2{
+  color:white;
+}
