@@ -68,6 +68,12 @@ div > h2 {
 .navigation > li {
   display: inline;
   margin: 50px;
+  
+}
+.navigation > li > a{
+  background-color: transparent;
+     padding: 15px;
+     border-radius: 5px;
 }
 
 .navbar {
@@ -79,6 +85,7 @@ div > h2 {
   margin-left: 20px;
   margin-right: 20px;
   border-radius: 15px;
+
 }
 div > ul > li > a {
   text-decoration: none;
@@ -113,11 +120,9 @@ i.fa-user:hover{
 }
 .navigation > li > a:hover{
      background-color: rgb(68, 68, 68);
-     padding: 15px;
-     border-radius: 5px;
      color: black;
-     text-transform:uppercase;
-     font-family: fantasy;
+     
+     
      
 }
 i.fa-bars{
