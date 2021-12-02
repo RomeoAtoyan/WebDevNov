@@ -116,3 +116,20 @@ addStudent(Student_1)
 addStudent(Student_2)
 
 console.log(myStudents)
+
+// function params : brutosalary , tax
+    //math calc here
+
+// let getNettoSalary = (2000*25)/100 // exact tax amount
+// console.log(2000-getNettoSalary)
+
+function getNettoSalary(bruto,tax){
+
+    let taxAmount = (bruto*tax)/100 // tax amount 500
+   // console.log(taxAmount)
+    return bruto -taxAmount // 2000 - 500
+
+}
+
+console.log(getNettoSalary(2000,25))
+console.log(getNettoSalary(3000,25))
