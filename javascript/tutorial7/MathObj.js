@@ -35,17 +35,20 @@ result = Math.min(3,6,66,99,100,101,999)
 result = Math.random()
 result = Math.round(Math.random()*10)
 
-function getRndInteger(min, max) {
-    return Math.round(Math.random() * (max - min) ) + min;
+function getRandom(min, max) {
+    return Math.floor(Math.random() * (max - min) ) + min;
   }
+
 
 let names = ['jack','mike','joe','michael']
 
-result = getRndInteger(90,100)
-let getRange = getRndInteger(0,3)
-console.log(getRange)
-result = names[getRange]
-let guessNumber=3
-guessNumber === getRange? console.log('correct'):console.log('incorrect')
+// result = getRndInteger(1,100)
+// let getRange = getRndInteger(0,3)
+// console.log(getRange)
+// result = names[getRange]
+// let guessNumber=3
+// guessNumber === getRange? console.log('correct'):console.log('incorrect')
 result = Math.random()
+let numberRandom =getRandom(0,3)
+result = names[numberRandom]
 console.log(result)
