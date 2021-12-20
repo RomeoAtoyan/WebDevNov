@@ -1,0 +1,9 @@
+.img{
+    height: 100px;
+    width: 100px;
+    
+}
+.card{
+    margin: 50px;
+    border: 1px solid red;
+}

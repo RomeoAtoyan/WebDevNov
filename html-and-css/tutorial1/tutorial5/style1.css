@@ -1,0 +1,42 @@
+*{
+    background-color: darkslateblue;
+}
+body,html{
+    padding: 0;
+    margin: 0;
+}
+.row{
+    border: 1px solid black;
+    padding: 1em;
+    background-color: yellowgreen;
+}
+#maincontainer{
+    background-color: grey ;
+    border-bottom-color: red;
+    border-bottom-width: 0px;
+    border-bottom-style: dashed;
+    padding: 10px;
+    border-radius: 10px;
+}
+   
+input{
+    background-color: black;
+    color: white;
+}
+input[name="username"]{
+    background-color: mediumseagreen;
+    color: black;
+}
+li{
+    color: red;
+    list-style-type: none;
+}
+li[name=item]{
+    color: green;
+    list-style-type: circle;
+
+}
+#maincontainer > .row > .col:nth-child(2) {
+    color: red !important;
+    padding: 3px;
+}

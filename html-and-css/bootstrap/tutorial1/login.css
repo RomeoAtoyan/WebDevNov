@@ -1,0 +1,27 @@
+.btn-custom{
+    min-width: 120px;
+    height: 36px;
+    font-size: 16px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 0 2px #f7f7f7;
+    background-color: transparent;
+    color: #ffffff;
+    transition: all 20ms ease-in-out;
+}
+.btn-custom:hover{
+    transform:scale(1.1);
+    background-color: #f7f7f7;
+    color: #a22274;
+    font-weight: bold;
+    box-shadow: 0 0 0 2px #a22274;
+    letter-spacing: 1.1px;
+    border-top-left-radius: 16px;
+    border-bottom-right-radius: 16px;    
+}
+.btn-custom:active{
+    transform: scale(1);
+}

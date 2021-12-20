@@ -1,0 +1,58 @@
+h1.welcome {
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+    font-family: cursive;
+}
+
+p.beautiful_flowers {
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    font-family: cursive;
+}
+
+a:hover {
+    color: rgb(187, 43, 249);
+}
+
+a {
+    color: white;
+    display: inline-block;
+    width: 100%¨;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: cursive;
+    font-size: x-large;
+}
+
+a {
+    color: white;
+    display: inline-block;
+    width: 100%¨;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: cursive;
+    font-size: x-large;
+}
+
+blockquote.blockquote {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+body.background_image {
+    background-image: url(https://images7.alphacoders.com/115/1154544.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+a.middle {}
