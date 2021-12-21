@@ -1,4 +1,4 @@
-let enger = 'romeo'
+let enger = 'gevorg'
 
 enger? console.log(`Hello ${enger}!`) : console.log('Hello')
 
