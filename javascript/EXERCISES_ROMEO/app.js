@@ -32,11 +32,24 @@
 
 // rechtHoek(50,25)
 
-const basis = 10
-const hoogte = 5
+// const basis = 10
+// const hoogte = 5
 
-function parallellogram(basis,hoogte) {
-    console.log((basis * hoogte) / 2)
-}
-parallellogram(10,5)
+// function parallellogram(basis,hoogte) {
+//     console.log((basis * hoogte) / 2)
+// }
+// parallellogram(10,5)
 
+// let Rom = 15
+// let Ars = 25
+
+
+// let input1 =document.querySelector(".input1")
+// let input2 =document.querySelector(".input2")
+// let btnResult = document.querySelector(".result")
+// let finalResult = document.querySelector(".final")
+
+// btnResult.addEventListener("click", ()=>{
+//    finalResult.innerHTML =  Number(input1.value) + Number(input2.value) 
+    
+// })
