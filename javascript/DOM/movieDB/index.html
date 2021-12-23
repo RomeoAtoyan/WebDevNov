@@ -15,20 +15,19 @@
                 <div class="card row">
                     <div class="card-header">Movie List Project</div>
                     <div class="card-body">
-                            <form id = "film-form" name="form">
                                 <div class="form-row">
                                     <div class="form-group col-md-6">
-                                        <input class="form-control" type="text" name="title" id = "title" placeholder="movie name">
+                                        <input class="form-control movieTitle" type="text" name="title" id = "title" placeholder="movie name">
                                     </div>
                                     <div class="form-group col-md-6">
-                                            <input class="form-control" type="text" name="director" id = "director" placeholder="director">
+                                            <input class="form-control directorName" type="text" name="director" id = "director" placeholder="director">
                                     </div>
                                     <div class="form-group col-md-6">
-                                            <input class="form-control" type="text" name="url" id = "url" placeholder="cover link">
+                                            <input class="form-control coverLink" type="text" name="url" id = "url" placeholder="cover link">
                                     </div>
                                 </div>
-                                <button id="add-movie" type="submit" class="btn btn-danger">Add Movie</button>
-                            </form>
+                                <button id="add-movie" type="submit" class="btn btn-danger movieAddBtn">Add Movie</button>
+                            
                             <hr>
                             
 
@@ -46,7 +45,6 @@
                                         <th scope="col">Cover</th>
                                         <th scope="col">Movie Name</th>
                                         <th scope="col">Director</th>
-                                        
                                       </tr>
                                     </thead>
                                     <tbody id = "films">
@@ -60,7 +58,7 @@
                                 </table>
                                   </table>
                             <hr>  
-                            <a id = "clear-films" class="btn btn-dark" href="#">Delete All Movies</a>               
+                            <a id = "clear-films" class="btn btn-dark delete" href="#">Delete All Movies</a>               
                         </div>
                       </div>
                 
