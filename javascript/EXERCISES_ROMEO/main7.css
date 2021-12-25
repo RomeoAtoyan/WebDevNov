@@ -1,0 +1,31 @@
+body{
+   background-color:black ;
+    
+}
+
+.c1{
+    background:linear-gradient(to right, black ,rgb(247, 0, 255),rgb(140, 0, 255),rgb(98, 0, 255),rgb(140, 0, 255),rgb(247, 0, 255), black);
+    padding: 20px;
+    border: rgb(255, 255, 255) solid 5px;
+    border-radius: 10px;
+    font-family: 'Bungee Hairline', cursive;
+    letter-spacing: 5px;
+    font-weight:bold;
+    color: rgb(255, 255, 255);
+}
+
+h5, p{
+    font-family: 'Bungee Hairline', cursive;
+    color: rgb(140, 0, 255);
+    font-size: 30px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+
+.btn{
+    background-color:rgba(162, 0, 255, 0.685);
+    margin-bottom: 30px;
+    margin-left: 50px;
+    font-weight: bold;
+    color: white;
+}
