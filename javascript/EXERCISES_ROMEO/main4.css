@@ -1,0 +1,31 @@
+body{
+    background-color: rgb(0, 0, 0);
+    
+}
+
+.c1{
+    background:linear-gradient(to right, rgb(0, 0, 0),rgb(0, 38, 255), #fff, yellow);
+    padding: 20px;
+    border: rgb(255, 255, 255) solid 5px;
+    border-radius: 10px;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 2px;
+    font-weight:bold;
+    color: rgb(255, 255, 255);
+}
+
+h5, p{
+    font-family: 'Allura', cursive;
+    color: red;
+    font-size: 30px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+
+.btn{
+    background-color:rgb(13, 19, 104);
+    margin-bottom: 30px;
+    margin-left: 50px;
+    font-weight: bold;
+    color: white;
+}

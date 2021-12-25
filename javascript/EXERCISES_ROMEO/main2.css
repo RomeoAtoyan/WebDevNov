@@ -18,3 +18,11 @@ h5 ,p{
     font-family: 'Permanent Marker', cursive;
     letter-spacing: 2px;
 }
+
+.btn{
+    background-color:chartreuse;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    color: black;
+    font-weight: bold;
+}

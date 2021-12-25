@@ -19,3 +19,11 @@ h5, p{
     color: yellow;
     font-size: 30px;
 }
+
+.btn{
+    background-color:rgb(0, 17, 255);
+    margin-bottom: 30px;
+    margin-left: 50px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
