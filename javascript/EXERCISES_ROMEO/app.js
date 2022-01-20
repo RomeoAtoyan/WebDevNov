@@ -53,3 +53,39 @@
 //    finalResult.innerHTML =  Number(input1.value) + Number(input2.value) 
     
 // })
+
+// function airsoftStuff(rifle = 'TR1' , handgun = ' Baba Yaga' , shotgun = 'Benelli M4'  ){
+//     console.log(`your rifle is a ${rifle}`)
+//     console.log(`your handgun is a ${handgun}`)
+//     console.log(`your shotgun is a ${shotgun}`)
+// }
+
+// airsoftStuff()
+
+// function rechthoekOppervlakte (basis,hoogte){
+//     let oppervlakte = basis * hoogte
+//     return oppervlakte
+// }
+// console.log(rechthoekOppervlakte(25,50))
+
+// function numOfTickets(tickets,person){
+//     return tickets*person
+// }
+// const howMany = numOfTickets(7,1)
+// console.log(howMany)
+
+// const romNeedsThereza = function(day) {
+//     if( day === 'monday'){
+//         return false
+//     } else {
+//         return true
+//     }
+// }
+// romNeedsThereza('monday')
+// console.log(romNeedsThereza('monday'))
+
+/////// EASIER WAY TO DO THIS
+
+// const romNeedsThereza = day => day === 'monday' ? false : true
+// romNeedsThereza('monday')
+// console.log(romNeedsThereza('monday'))

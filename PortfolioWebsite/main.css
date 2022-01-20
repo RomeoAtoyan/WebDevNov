@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(https://wallpapersmug.com/large/4a2757/planet-from-outer-space-texture.jpeg);
+}
+
+.title {
+   height: 150px;
+   width: 500px;
+   color: white;
+   margin-top: 425px;
+   margin-left: 50px;
+   font-size: 30px;
+   display: flex;
+   flex-direction: column;
+   font-family: 'Black Ops One', cursive;
+
+   
+}
+
+.name-section h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.name-section h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.link-icons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.link-icons a i {
+    color: rgba(0, 255, 255, 0.514);
+}
+
+.link-icons a i:hover {
+    color: rgb(0, 255, 255);
+    transition: all 0.35s ease-in;
+}
+
+
+
+/* .loading2:hover {
+    left: 0;
+    right: 0;
+    top: 100px;
+    bottom: 0;
+    display: block;
+  }
+  .loading2:hover {
+    top: 240px;
+  }
+
+  .wave2:hover {
+    background-image: url("https://webdevtrick.com/wp-content/uploads/water-wave.png");
+    -moz-background-clip: text;
+    -o-background-clip: text;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0px 0px rgba(255, 255, 255, 0.06);
+    animation: wave-animation 1s infinite linear, loading-animation 10s infinite linear alternate;
+    background-size: 200px 100px;
+    background-repeat: repeat-x;
+    opacity: 1;
+  }
+  
+  @keyframes wave-animation {
+
+    100% {
+        background-position: 0 bottom;
+      }
+
+    0% {
+      background-position: 200px bottom;
+    }
+   
+  }
+  @keyframes loading-animation {
+    100% {
+        background-size: 200px 0px;
+      }
+
+    0% {
+      background-size: 200px 200px;
+    }
+   
+  }
+  
+  @media (max-width: 765px) {
+    .loading, .loading2 {
+      font-size: 50pt;
+    }
+  } */
