@@ -1,37 +1,42 @@
 let todoWrapper = document.querySelector(".todo-items-wrapper");
 let itemsWrapper = document.querySelector(".todo-items");
 const itemsLeft = document.querySelector(".item-left");
-
+function countCompleted() {
+  var item = db.collection("todo-items").where("status", "==", "completed");
+  item.get().then(snap => {
+    size = snap.size;
+    document.getElementById("counter").innerHTML = size;
+  });
+}
 function addItem(event) {
   event.preventDefault();
   let text = document.getElementById("todo-input");
   db.collection("todo-items").add({
     text: text.value,
-    status: "active",
+    status: "active"
   });
   text.value = "";
   countCompleted();
 }
 
 function getItems() {
-  db.collection("todo-items").onSnapshot((snapshot) => {
+  db.collection("todo-items").onSnapshot(snapshot => {
     console.log(snapshot);
     let items = [];
-    snapshot.docs.forEach((doc) => {
+    snapshot.docs.forEach(doc => {
       items.push({
         id: doc.id,
-        ...doc.data(),
+        ...doc.data()
       });
     });
     generateItems(items);
   });
-  countCompleted()
-
+  countCompleted();
 }
 
 function generateItems(items) {
   let itemsHTML = "";
-  items.forEach((item) => {
+  items.forEach(item => {
     itemsHTML += `
                 <div class="todo-item">
                     
@@ -67,7 +72,7 @@ function generateItems(items) {
 
 function createEventListeners() {
   let todoCheckMarks = document.querySelectorAll(".todo-item .check-mark");
-  todoCheckMarks.forEach((checkMark) => {
+  todoCheckMarks.forEach(checkMark => {
     checkMark.addEventListener("click", function () {
       markCompleted(checkMark.dataset.id);
     });
@@ -82,18 +87,17 @@ function markCompleted(id) {
       let status = doc.data().status;
       if (status == "active") {
         item.update({
-          status: "completed",
+          status: "completed"
         });
       } else if (status == "completed") {
         item.update({
-          status: "active",
+          status: "active"
         });
       }
     }
   });
 }
 
-getItems();
 
 function fun(e) {
   var val = e.value;
@@ -112,8 +116,7 @@ function allDeleter() {
       doc.ref.delete();
     });
 
-    
-    countCompleted()
+    countCompleted();
   });
 }
 
@@ -134,16 +137,15 @@ function createEventListeners() {
 
   let bins = document.querySelectorAll(".binmarkcont");
 
-  todoCheckMarks.forEach((checkMark) => {
+  todoCheckMarks.forEach(checkMark => {
     checkMark.addEventListener("click", function () {
       markCompleted(checkMark.dataset.id);
     });
   });
 
-  bins.forEach((bin) => {
+  bins.forEach(bin => {
     bin.addEventListener("click", function () {
       deleteOne(bin.dataset.id);
-
 
       countCompleted();
     });
@@ -156,18 +158,5 @@ function deleteOne(id) {
   item.delete();
 }
 
-function countCompleted() {
-  db.collection("todo-items")
-    .where("status", "==", "completed")
-
-    .get()
-
-    .then((snap) => {
-      size = snap.size;
-
-      document.getElementById("counter").innerHTML = size;
-      console.log("size" + size)
-    });
-}
-getItems()
-countCompleted()
+getItems();
+countCompleted();
