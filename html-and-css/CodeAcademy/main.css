@@ -1,0 +1,63 @@
+body {
+    background-color: rgb(31, 31, 31);
+}
+
+.header {
+    font-family: Helvetica;
+    font-size: 100px;
+    font-weight: bold;
+    color: khaki;
+    text-align: center;
+    background-image: url(./Assets/pattern.webp);
+    border-radius: 10px;
+}
+
+.product-name1 {
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    background-color: mediumspringgreen;
+    border-radius: 10px;
+}
+
+.product-name2 {
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    background-color: lightcoral;
+    border-radius: 10px;
+}
+
+.product-name3 {
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    background-color: skyblue;
+    border-radius: 10px;
+}
+
+span {
+    font-family: Helvetica;
+    font-weight: bold;
+    color: blue;
+}
+
+p {
+    font-family: fantasy;
+    letter-spacing: 1px;
+    color: white;
+}
+
+h2 {
+    color: white;
+}
+
+img {
+    border-radius: 10px;
+}
