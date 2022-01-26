@@ -66,8 +66,18 @@ function generateItems(items) {
   });
   document.querySelector(".todo-items").innerHTML = itemsHTML;
   document.querySelector(".item-left").innerHTML =
-    items.length + " " + "items(s) left";
+    items.length + " " + "items";
   createEventListeners();
+  if(items.length == 1){
+    document.querySelector(".item-left").innerHTML =
+    items.length + " " + "item";
+  } else if(items.length < 1 ){
+    document.querySelector(".item-left").innerHTML =
+    "You have no todos left !";
+  }
+    
+  
+  countCompleted()
 }
 
 function createEventListeners() {
@@ -99,10 +109,6 @@ function markCompleted(id) {
 }
 
 
-function fun(e) {
-  var val = e.value;
-  document.body.setAttribute("style", "filter: brightness(" + val + "%);");
-}
 
 function updateItemsCount(number) {
   itemsLeft.innerText = +(+itemsLeft.innerText) + number;
@@ -131,7 +137,6 @@ function allDeleter() {
 // );
 // itemsWrapper.innerHTML = "";
 // });
-
 function createEventListeners() {
   let todoCheckMarks = document.querySelectorAll(".todo-item .check-mark");
 
@@ -141,6 +146,7 @@ function createEventListeners() {
     checkMark.addEventListener("click", function () {
       markCompleted(checkMark.dataset.id);
     });
+    countCompleted();
   });
 
   bins.forEach(bin => {
@@ -160,3 +166,5 @@ function deleteOne(id) {
 
 getItems();
 countCompleted();
+
+
