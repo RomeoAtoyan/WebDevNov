@@ -125,7 +125,7 @@ body {
 .todo-text.checked {
   text-decoration:line-through;
   text-decoration-color: lightskyblue;
-  color: rgb(59, 59, 59);
+  color: rgb(134, 134, 134);
 }
 
 .new-todo-input {

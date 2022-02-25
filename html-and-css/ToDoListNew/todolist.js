@@ -68,14 +68,17 @@ function generateItems(items) {
   document.querySelector(".item-left").innerHTML =
     items.length + " " + "items";
   createEventListeners();
-  if(items.length == 1){
+  if ( items.length == 1){
     document.querySelector(".item-left").innerHTML =
     items.length + " " + "item";
-  } else if(items.length < 1 ){
+  } else if ( items.length < 1 ) {
     document.querySelector(".item-left").innerHTML =
-    "You have no todos left !";
-  }
-    
+    "You have nothing todo anymore !";
+  } else if ( items.length === 5 ) {
+    document.querySelector(".item-left").innerHTML =
+    "You have got enough todos!";
+  } 
+  
   
   countCompleted()
 }
@@ -121,7 +124,7 @@ function allDeleter() {
     querySnapshot.forEach(function (doc) {
       doc.ref.delete();
     });
-
+ 
     countCompleted();
   });
 }
