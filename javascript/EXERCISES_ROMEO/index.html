@@ -1,23 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bootstrap Site</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Poppins:ital,wght@0,100;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>FLOOBLE</title>
 </head>
 <body>
-    <input type="number" class="input1">
-    <input type="number" class="input2">
-<h1 class="text-center m-5">
-    <p class="btn btn-danger btn-lg result">How Many</p>
-    <p class="final">...</p>
-</h1>
-
-
-
-<script src ="app.js"></script>
+    <div class="navbar-container">
+        <div class="left-items">
+            <h1>About</h1>
+            <h1>Store</h1>
+        </div>
+        <div class="right-items">
+            <h1>FlooMail</h1>
+            <h1>Images</h1>
+            <i id="blockIcon" class="fa-solid fa-table-cells-large fa-3x"></i>
+        </div>
+    </div>
+    <div class="engine-container">
+        <div class="engine-title big-margin-bottom">
+            <h1>F<span id ="greenL">L</span>OO<span id="greenB">B</span>LE</h1>
+        </div>
+        <div class="engine-icons big-margin-bottom">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input class="input" type="text">
+            <i id='mic' class="fa-solid fa-microphone fa-2x"></i>
+            <div class="popup-message">
+                <div class="corner">
+                </div>
+                <h1>Voice Recognition</h1>
+                <p><span id="redPress">Press</span> the microphone button to activate voice recognition</p>
+            </div>
+            <div id="activePopup" class="popup-pressed-message">
+                <div class="popup-pressed-message-corner">
+                </div>
+                <h1>Voice Recognition Active</h1> 
+            </div>
+        </div>
+        <div class="search">
+            <button id="leftBtn">Flooble Search</button>
+            <button id="rightBtn">Show Me The Money</button>
+        </div>
+    </div>
+    <footer class="footer-container">
+        <div class="footer-left">
+            <h1>Advertising</h1>
+            <h1>Business</h1>
+        </div>
+        <div class="footer-right">
+            <h1>Privacy</h1>
+            <h1>Terms</h1>
+            <h1>Settings</h1>
+        </div>
+    </footer>
+    <script src="app.js"></script>  
 </body>
 </html>

@@ -57,11 +57,75 @@
 //     x--
 // } while (x > 5)
 
-let rapperArray
 
 
 
 
+
+
+
+const bros = [{
+    name: 'Khachik',
+    height: '174',
+    mass: '90',
+    eye_color: 'lightbrown',
+    gender: 'male',
+    occupation: 'brother'
+
+},
+{
+    name: 'Arsen',
+    height: '170',
+    mass: '75',
+    eye_color: 'brown',
+    gender: 'male',
+    occupation: 'friend'
+
+},
+{
+    name: 'Ashot',
+    height: '170',
+    mass: '70',
+    eye_color: 'lightbrown',
+    gender: 'male',
+    occupation: 'friend'
+
+},
+{
+    name: 'Gevor',
+    height: '177',
+    mass: '90',
+    eye_color: 'lightbrown',
+    gender: 'male',
+    occupation: 'friend'
+
+},
+]
+
+const eyeColor = bros.map((bro) => bro.eye_color)
+console.log(eyeColor)
+
+const broNames = bros.map((bro) => bro.name)
+console.log(broNames)
+
+const broGender = bros.map((bro) => ({
+    name: bro.name,
+    gender: bro.gender
+}))
+console.log(broGender)
+
+const broOccupation = bros.map((bro) => ({
+    name: bro.name,
+    occupation: bro.occupation
+}))
+
+console.log(broOccupation)
+
+const broMass = bros.map((bro) => bro.mass)
+console.log(broMass)
+if ( broMass.length == 4){
+    console.log('rrrr')
+}
 
 
 

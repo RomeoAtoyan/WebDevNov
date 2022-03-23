@@ -1,106 +1,40 @@
-// let enger = 'xcho'
+const searchBtn = document.getElementById("leftBtn");
+const moneyBtn = document.getElementById("rightBtn");
+const micIcon = document.getElementById("mic");
 
-// enger? console.log(`Hello ${enger}!`) : console.log('Hello')
+micIcon.onmouseenter = () => {
+  const popUp = document.querySelector(".popup-message");
+  popUp.style.transition = "all .1s";
+  popUp.style.visibility = "visible";
+  console.log("hovering over mouse");
+};
 
-// switch(enger){
-//     case 'Arsen':
-//     case 'arsen':
-//     console.log('You have a CM16')
-//     break
-//     case 'Xcho':
-//     case 'xcho':
-//     console.log('You have an AK74')
-//     break
-//     case 'Gevorg':
-//     case 'gevorg':
-//     console.log('You have an M4')
-//     break
-//     case 'Romeo':
-//     case 'romeo':
-//     console.log('You have a Bolt M4')
-//     break
-//     default:
-//     console.log("You dont play airsoft")               
-// }
+micIcon.onmouseleave = () => {
+  const popUp = document.querySelector(".popup-message");
+  popUp.style.visibility = "hidden";
+  console.log("hovering out mouse");
+};
 
-// const basis = 50
-// const hoogte = 25
+micIcon.onclick = () => {
+  const micIcon = document.getElementById("mic");
+  const activeMessage = document.getElementById("activePopup");
+  activeMessage.style.visibility = "visible";
+  micIcon.style.transform = "scale(0.7)";
+  micIcon.style.color = "red";
 
-// function rechtHoek (basis,hoogte) {
-//     console.log( basis * hoogte)
-// }
+  setTimeout(() => {
+    const activeMessage = document.getElementById("activePopup");
+    activeMessage.style.visibility = "hidden";
+    activeMessage.style.transition = "all 0.1s ease-in";
+    micIcon.style.transform = "scale(1)";
+    micIcon.style.color = "";
+    redPress.style.color = "";
+  }, 2000);
 
-// rechtHoek(50,25)
-
-// const basis = 10
-// const hoogte = 5
-
-// function parallellogram(basis,hoogte) {
-//     console.log((basis * hoogte) / 2)
-// }
-// parallellogram(10,5)
-
-// let Rom = 15
-// let Ars = 25
-
-
-// let input1 =document.querySelector(".input1")
-// let input2 =document.querySelector(".input2")
-// let btnResult = document.querySelector(".result")
-// let finalResult = document.querySelector(".final")
-
-// btnResult.addEventListener("click", ()=>{
-//    finalResult.innerHTML =  Number(input1.value) + Number(input2.value) 
-    
-// })
-
-// function airsoftStuff(rifle = 'TR1' , handgun = ' Baba Yaga' , shotgun = 'Benelli M4'  ){
-//     console.log(`your rifle is a ${rifle}`)
-//     console.log(`your handgun is a ${handgun}`)
-//     console.log(`your shotgun is a ${shotgun}`)
-// }
-
-// airsoftStuff()
-
-// function rechthoekOppervlakte (basis,hoogte){
-//     let oppervlakte = basis * hoogte
-//     return oppervlakte
-// }
-// console.log(rechthoekOppervlakte(25,50))
-
-// function numOfTickets(tickets,person){
-//     return tickets*person
-// }
-// const howMany = numOfTickets(7,1)
-// console.log(howMany)
-
-// const romNeedsThereza = function(day) {
-//     if( day === 'monday'){
-//         return false
-//     } else {
-//         return true
-//     }
-// }
-// romNeedsThereza('monday')
-// console.log(romNeedsThereza('monday'))
-
-/////// EASIER WAY TO DO THIS
-
-// const romNeedsThereza = day => day === 'monday' ? false : true
-// romNeedsThereza('monday')
-// console.log(romNeedsThereza('monday'))
-
-// const randomNumbers = [375, 200, 3.14, 7, 13, 852];
-
-// Call .filter() on randomNumbers below
-// const smallNumbers = randomNumbers.filter(function(num){
-//   return num < 250
-// })
-
-// const favoriteWords = ['nostalgia', 'hyperbole', 'fervent', 'esoteric', 'serene'];
-
-
-// Call .filter() on favoriteWords below
-// const longFavoriteWords = favoriteWords.filter(function(word){
-//   return word.length > 7
-//   })
+  if (micIcon.style.color === "") {
+    micIcon.style.color = 'red';
+  } else {
+    micIcon.style.color = "";
+  }
+  console.log("Mic icon clicked");
+};
