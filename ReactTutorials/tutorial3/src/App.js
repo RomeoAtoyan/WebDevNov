@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { Container, Button } from "react-bootstrap";
 
 export default function App() {
+  
   // useEffect useState => react hooks
   const [posts, setPosts] = useState([])
   const [IndexNumber, setIndexNumber] = useState(1)
@@ -33,7 +34,9 @@ export default function App() {
     .then(res => res.json())
     .then(data => {
     setTitle(data.title)
-    })    
+    }) 
+    console.log(IndexNumber)
+
   }
 
   const prevPost = (e) => {
@@ -50,23 +53,18 @@ export default function App() {
     })    
     
     }
+    console.log(IndexNumber)
   }
 
 
   return(
 
     <div>
-      <Container className="text-center mt-5">
+      <Container className="text-center mt-5 hello">
         <p>{title}</p>  
-        <Button variant={"warning"} onClick={prevPost} className="mx-1">Previous Post</Button>
-        <Button variant={"warning"} onClick={nextPost}>Next Post</Button>
+        <Button id="next" variant={"warning"} onClick={prevPost} className="mx-1">Previous Post</Button>
+        <Button id="prev" variant={"warning"} onClick={nextPost}>Next Post</Button>
       </Container>
     </div>
   )
 }
-// posts.map((post, index) => (
-        //   <div key = {index}>
-        //     <p>{console.log(post)}</p>
-        //     <p>{post.title}</p>
-        //   </div>
-        // ))
