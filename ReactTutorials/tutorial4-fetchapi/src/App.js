@@ -1,9 +1,11 @@
 import { Container } from "react-bootstrap";
-
-export default function App() {
+import ChildComponent from "./components/ChildComponent";
+export default function App({ helloMessage }) {
   return (
-      <Container>
-        <h1>Hello World</h1>
-      </Container>
+    <Container>
+      <h1>hello</h1>
+
+      <ChildComponent helloMessage={helloMessage} />
+    </Container>
   );
 }
