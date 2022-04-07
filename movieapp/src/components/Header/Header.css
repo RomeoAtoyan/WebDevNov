@@ -1,0 +1,103 @@
+.nav{
+  background-image:url(./poster.jpg);
+  background-position:bottom;
+  position: relative;
+}
+.nav::after {
+  content:"";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.431);
+  
+}
+.navbar_container {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  width: 80%;
+  height: 125px;
+  display: flex;
+  z-index: 3;
+  flex-direction: row;
+  justify-content: space-between;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 0.70),
+    rgba(199, 0, 0, 0.70),
+    rgb(180, 0, 0, 0.70),
+    rgb(150, 0, 0, 0.70),
+    rgb(100, 0, 0, 0.70)
+  );
+  margin: 25px auto;
+  border-radius: 10px;
+}
+
+.navbar_items_left {
+  width: calc(100% /2 - 10px);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.input_container {
+  width: 70%;
+  display: flex;
+  align-items: center;
+}
+
+.search_input {
+  height: 35px;
+  border: 1px solid black;
+  border-radius: 5px;
+  outline: none;
+  width: 100%;
+  margin-left: 20px;
+}
+
+.search_input:focus {
+  font-weight: bolder;
+  letter-spacing: 1px;
+}
+
+.navbar_items_right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+  margin-right: 35px;
+}
+
+.navbar_items_right ul  {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+  height: 60px;
+}
+
+.navbar_items_right ul li {
+  font-size: 17px;
+}
+
+.navbar_items_right ul li:hover {
+  cursor: pointer;
+  transition: all 0.5s;
+  font-size: 20px;
+}
+
+.search_icon {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.film_icon {
+  margin-left: 30px;
+}

@@ -1,11 +1,13 @@
-import { Container } from "react-bootstrap";
-import ChildComponent from "./components/ChildComponent";
-export default function App({ helloMessage }) {
-  return (
-    <Container>
-      <h1>hello</h1>
+import {Container} from 'react-bootstrap'
+import ChildComponent from './components/ChildComponent'
+import LoginForm from './components/LoginForm'
+export default function App({helloMessage}){
+    return(
+        <Container>
+            <h1>hello</h1>
 
-      <ChildComponent helloMessage={helloMessage} />
-    </Container>
-  );
+            <ChildComponent helloMessage={helloMessage} />
+            <LoginForm/>
+        </Container>
+    )
 }
